@@ -1,0 +1,62 @@
+server:
+  port: 8080
+  tomcat:
+    connection-timeout: 20s
+
+spring:
+  application:
+    name: LAAM Words
+
+  datasource:
+    # JDBC URL: jdbc:postgresql://[호스트]:[포트]/[DB이름]
+    url: jdbc:postgresql://localhost:5432/public
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+
+  mvc:
+    pathmatch:
+      matching-strategy: path-pattern-parser
+
+  profiles:
+    default: local
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    mode: HTML
+
+jwt:
+  secret: 66650E3CBCF3E6E1DB2F5D3CDCAB8B9AED0198DE0C060064E270C2199329F1B85191162AA80AD0C4EC79A38E2E475186E9E7F0BBAD38D05A9C732F5B5B5E7B2C
+  expiration-time: 108000000
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+  type-aliases-package: com.laam.words
+  configuration:
+    default-statement-timeout: 60
+    map-underscore-to-camel-case: true
+    jdbc-type-for-null: varchar
+    call-setters-on-nulls: true
+    auto-mapping-unknown-column-behavior: none
+
+    
+logging:
+  level:
+    root: info
+#    org:
+#      apache:
+#        coyote:
+#          http11: trace
+    com:
+      laam:
+        words: trace
+    
+  file:
+    path: logs

@@ -1,0 +1,145 @@
+2026-01-20T15:34:33.939+09:00  INFO 3264 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Starting LaamWordsApplication using Java 21.0.9 with PID 3264 (C:\dev\eclipse-workspace\words\target\classes started by jakea in C:\dev\eclipse-workspace\words)
+2026-01-20T15:34:33.941+09:00 DEBUG 3264 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-01-20T15:34:33.942+09:00  INFO 3264 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : No active profile set, falling back to 1 default profile: "local"
+2026-01-20T15:34:34.676+09:00  INFO 3264 --- [LAAM Words] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-20T15:34:34.748+09:00  INFO 3264 --- [LAAM Words] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-20T15:34:34.749+09:00  INFO 3264 --- [LAAM Words] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-20T15:34:34.786+09:00  INFO 3264 --- [LAAM Words] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 811 ms
+2026-01-20T15:34:35.006+09:00 DEBUG 3264 --- [LAAM Words] [main] com.laam.words.cmn.filter.JwtFilter      : Filter 'jwtFilter' configured for use
+2026-01-20T15:34:35.137+09:00  INFO 3264 --- [LAAM Words] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name lwUserService
+2026-01-20T15:34:35.247+09:00  INFO 3264 --- [LAAM Words] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-01-20T15:34:35.445+09:00  INFO 3264 --- [LAAM Words] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-20T15:34:35.450+09:00  INFO 3264 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Started LaamWordsApplication in 1.853 seconds (process running for 2.305)
+2026-01-20T15:34:36.151+09:00 DEBUG 3264 --- [LAAM Words] [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2026-01-20T15:34:36.152+09:00 DEBUG 3264 --- [LAAM Words] [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /hello HTTP/1.1
+Host: 172.16.21.93:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+
+]
+2026-01-20T15:34:36.172+09:00  INFO 3264 --- [LAAM Words] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-20T15:34:36.172+09:00  INFO 3264 --- [LAAM Words] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-20T15:34:36.173+09:00  INFO 3264 --- [LAAM Words] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-20T15:34:36.204+09:00  INFO 3264 --- [LAAM Words] [http-nio-8080-exec-2] c.l.w.app.controller.CommonController    : Hello Controller 호출됨, INFO 레벨 로그
+2026-01-20T15:34:36.205+09:00 DEBUG 3264 --- [LAAM Words] [http-nio-8080-exec-2] c.l.w.app.controller.CommonController    : 디버그 로그입니다.
+2026-01-20T15:34:36.468+09:00 DEBUG 3264 --- [LAAM Words] [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [484]
+2026-01-20T15:34:36.468+09:00 DEBUG 3264 --- [LAAM Words] [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received []
+2026-01-20T15:34:36.469+09:00 DEBUG 3264 --- [LAAM Words] [http-nio-8080-exec-2] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@122a918e:org.apache.tomcat.util.net.NioChannel@5aa52ca6:java.nio.channels.SocketChannel[connected local=/172.16.21.93:8080 remote=/172.16.21.93:50060]], Status in: [OPEN_READ], State out: [OPEN]
+2026-01-20T15:35:26.116+09:00  INFO 3264 --- [LAAM Words] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-01-20T15:35:26.118+09:00  INFO 3264 --- [LAAM Words] [RMI TCP Connection(10)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-20T15:35:26.131+09:00  INFO 3264 --- [LAAM Words] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-20T15:35:27.849+09:00  INFO 25304 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Starting LaamWordsApplication using Java 21.0.9 with PID 25304 (C:\dev\eclipse-workspace\words\target\classes started by jakea in C:\dev\eclipse-workspace\words)
+2026-01-20T15:35:27.851+09:00 DEBUG 25304 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-01-20T15:35:27.852+09:00  INFO 25304 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : No active profile set, falling back to 1 default profile: "local"
+2026-01-20T15:35:28.542+09:00  INFO 25304 --- [LAAM Words] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-20T15:35:28.552+09:00  INFO 25304 --- [LAAM Words] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-20T15:35:28.552+09:00  INFO 25304 --- [LAAM Words] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-20T15:35:28.595+09:00  INFO 25304 --- [LAAM Words] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 714 ms
+2026-01-20T15:35:28.799+09:00 DEBUG 25304 --- [LAAM Words] [main] com.laam.words.cmn.filter.JwtFilter      : Filter 'jwtFilter' configured for use
+2026-01-20T15:35:28.927+09:00  INFO 25304 --- [LAAM Words] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name lwUserService
+2026-01-20T15:35:29.035+09:00  INFO 25304 --- [LAAM Words] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-01-20T15:35:29.226+09:00  INFO 25304 --- [LAAM Words] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-20T15:35:29.230+09:00  INFO 25304 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Started LaamWordsApplication in 1.74 seconds (process running for 2.21)
+2026-01-20T15:35:33.807+09:00  INFO 25304 --- [LAAM Words] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-20T15:35:33.808+09:00  INFO 25304 --- [LAAM Words] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-20T15:35:33.809+09:00  INFO 25304 --- [LAAM Words] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-20T15:35:33.843+09:00  INFO 25304 --- [LAAM Words] [http-nio-8080-exec-1] c.l.w.app.controller.CommonController    : Hello Controller 호출됨, INFO 레벨 로그
+2026-01-20T15:35:33.843+09:00 DEBUG 25304 --- [LAAM Words] [http-nio-8080-exec-1] c.l.w.app.controller.CommonController    : 디버그 로그입니다.
+2026-01-20T16:00:07.369+09:00  INFO 25304 --- [LAAM Words] [RMI TCP Connection(35)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-01-20T16:00:07.372+09:00  INFO 25304 --- [LAAM Words] [RMI TCP Connection(35)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-20T16:00:07.385+09:00  INFO 25304 --- [LAAM Words] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-20T16:00:10.977+09:00  INFO 11200 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Starting LaamWordsApplication using Java 21.0.9 with PID 11200 (C:\dev\eclipse-workspace\words\target\classes started by jakea in C:\dev\eclipse-workspace\words)
+2026-01-20T16:00:10.979+09:00 DEBUG 11200 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-01-20T16:00:10.979+09:00  INFO 11200 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : No active profile set, falling back to 1 default profile: "local"
+2026-01-20T16:00:11.346+09:00  INFO 11200 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-20T16:00:11.347+09:00  INFO 11200 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-20T16:00:11.364+09:00  INFO 11200 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-01-20T16:00:11.498+09:00  INFO 11200 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-20T16:00:11.498+09:00  INFO 11200 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-20T16:00:11.503+09:00  INFO 11200 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-01-20T16:00:11.917+09:00  INFO 11200 --- [LAAM Words] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-20T16:00:11.928+09:00  INFO 11200 --- [LAAM Words] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-20T16:00:11.928+09:00  INFO 11200 --- [LAAM Words] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-20T16:00:11.968+09:00  INFO 11200 --- [LAAM Words] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 955 ms
+2026-01-20T16:00:12.181+09:00 DEBUG 11200 --- [LAAM Words] [main] com.laam.words.cmn.filter.JwtFilter      : Filter 'jwtFilter' configured for use
+2026-01-20T16:00:12.559+09:00  INFO 11200 --- [LAAM Words] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name lwUserService
+2026-01-20T16:00:12.672+09:00  INFO 11200 --- [LAAM Words] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-01-20T16:00:12.884+09:00  INFO 11200 --- [LAAM Words] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-20T16:00:12.889+09:00  INFO 11200 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Started LaamWordsApplication in 2.278 seconds (process running for 3.632)
+2026-01-20T16:02:07.534+09:00  INFO 11200 --- [LAAM Words] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-01-20T16:02:07.537+09:00  INFO 11200 --- [LAAM Words] [RMI TCP Connection(11)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-20T16:02:07.550+09:00  INFO 11200 --- [LAAM Words] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-20T16:02:10.339+09:00  INFO 22704 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Starting LaamWordsApplication using Java 21.0.9 with PID 22704 (C:\dev\eclipse-workspace\words\target\classes started by jakea in C:\dev\eclipse-workspace\words)
+2026-01-20T16:02:10.341+09:00 DEBUG 22704 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-01-20T16:02:10.342+09:00  INFO 22704 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : No active profile set, falling back to 1 default profile: "local"
+2026-01-20T16:02:10.686+09:00  INFO 22704 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-20T16:02:10.686+09:00  INFO 22704 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-20T16:02:10.702+09:00  INFO 22704 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-01-20T16:02:10.835+09:00  INFO 22704 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-20T16:02:10.835+09:00  INFO 22704 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-20T16:02:10.840+09:00  INFO 22704 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-01-20T16:02:11.244+09:00  INFO 22704 --- [LAAM Words] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-20T16:02:11.254+09:00  INFO 22704 --- [LAAM Words] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-20T16:02:11.254+09:00  INFO 22704 --- [LAAM Words] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-20T16:02:11.293+09:00  INFO 22704 --- [LAAM Words] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 919 ms
+2026-01-20T16:02:11.501+09:00 DEBUG 22704 --- [LAAM Words] [main] com.laam.words.cmn.filter.JwtFilter      : Filter 'jwtFilter' configured for use
+2026-01-20T16:02:11.537+09:00  INFO 22704 --- [LAAM Words] [main] com.laam.words.cmn.conf.RedisConfig      : # Redis Host : 127.0.0.1
+2026-01-20T16:02:11.538+09:00  INFO 22704 --- [LAAM Words] [main] com.laam.words.cmn.conf.RedisConfig      : # Redis Port : 6379
+2026-01-20T16:02:11.882+09:00  INFO 22704 --- [LAAM Words] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name lwUserService
+2026-01-20T16:02:11.988+09:00  INFO 22704 --- [LAAM Words] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-01-20T16:02:12.215+09:00  INFO 22704 --- [LAAM Words] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-20T16:02:12.220+09:00  INFO 22704 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Started LaamWordsApplication in 2.228 seconds (process running for 2.712)
+2026-01-20T16:04:45.043+09:00  INFO 22704 --- [LAAM Words] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-01-20T16:04:45.046+09:00  INFO 22704 --- [LAAM Words] [RMI TCP Connection(13)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-20T16:04:45.065+09:00  INFO 22704 --- [LAAM Words] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-20T16:04:47.844+09:00  INFO 10380 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Starting LaamWordsApplication using Java 21.0.9 with PID 10380 (C:\dev\eclipse-workspace\words\target\classes started by jakea in C:\dev\eclipse-workspace\words)
+2026-01-20T16:04:47.847+09:00 DEBUG 10380 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-01-20T16:04:47.847+09:00  INFO 10380 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : No active profile set, falling back to 1 default profile: "local"
+2026-01-20T16:04:48.198+09:00  INFO 10380 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-20T16:04:48.198+09:00  INFO 10380 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-20T16:04:48.215+09:00  INFO 10380 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-01-20T16:04:48.346+09:00  INFO 10380 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-20T16:04:48.347+09:00  INFO 10380 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-20T16:04:48.351+09:00  INFO 10380 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-01-20T16:04:48.760+09:00  INFO 10380 --- [LAAM Words] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-20T16:04:48.770+09:00  INFO 10380 --- [LAAM Words] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-20T16:04:48.771+09:00  INFO 10380 --- [LAAM Words] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-20T16:04:48.808+09:00  INFO 10380 --- [LAAM Words] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 929 ms
+2026-01-20T16:04:48.825+09:00  INFO 10380 --- [LAAM Words] [main] com.laam.words.cmn.conf.JwtProvider      : # JwtProvider : expirationTime : 108000000
+2026-01-20T16:04:48.984+09:00  INFO 10380 --- [LAAM Words] [main] com.laam.words.cmn.filter.JwtFilter      : # JwtFilter initialized.
+2026-01-20T16:04:49.020+09:00 DEBUG 10380 --- [LAAM Words] [main] com.laam.words.cmn.filter.JwtFilter      : Filter 'jwtFilter' configured for use
+2026-01-20T16:04:49.059+09:00  INFO 10380 --- [LAAM Words] [main] com.laam.words.cmn.conf.RedisConfig      : # Redis Host : 127.0.0.1
+2026-01-20T16:04:49.059+09:00  INFO 10380 --- [LAAM Words] [main] com.laam.words.cmn.conf.RedisConfig      : # Redis Port : 6379
+2026-01-20T16:04:49.400+09:00  INFO 10380 --- [LAAM Words] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name lwUserService
+2026-01-20T16:04:49.511+09:00  INFO 10380 --- [LAAM Words] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-01-20T16:04:49.726+09:00  INFO 10380 --- [LAAM Words] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-20T16:04:49.732+09:00  INFO 10380 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Started LaamWordsApplication in 2.234 seconds (process running for 2.713)
+2026-01-20T16:06:46.858+09:00  INFO 10380 --- [LAAM Words] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-01-20T16:06:46.861+09:00  INFO 10380 --- [LAAM Words] [RMI TCP Connection(11)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-20T16:06:46.874+09:00  INFO 10380 --- [LAAM Words] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-20T16:06:49.487+09:00  INFO 856 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Starting LaamWordsApplication using Java 21.0.9 with PID 856 (C:\dev\eclipse-workspace\words\target\classes started by jakea in C:\dev\eclipse-workspace\words)
+2026-01-20T16:06:49.488+09:00 DEBUG 856 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-01-20T16:06:49.489+09:00  INFO 856 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : No active profile set, falling back to 1 default profile: "local"
+2026-01-20T16:06:49.827+09:00  INFO 856 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-20T16:06:49.828+09:00  INFO 856 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-20T16:06:49.843+09:00  INFO 856 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-01-20T16:06:49.978+09:00  INFO 856 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-20T16:06:49.978+09:00  INFO 856 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-20T16:06:49.983+09:00  INFO 856 --- [LAAM Words] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-01-20T16:06:50.384+09:00  INFO 856 --- [LAAM Words] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-20T16:06:50.394+09:00  INFO 856 --- [LAAM Words] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-20T16:06:50.394+09:00  INFO 856 --- [LAAM Words] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-20T16:06:50.433+09:00  INFO 856 --- [LAAM Words] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 913 ms
+2026-01-20T16:06:50.451+09:00  INFO 856 --- [LAAM Words] [main] com.laam.words.cmn.conf.JwtProvider      : # JwtProvider : expirationTime : 108000000
+2026-01-20T16:06:50.608+09:00  INFO 856 --- [LAAM Words] [main] com.laam.words.cmn.filter.JwtFilter      : # JwtFilter initialized.
+2026-01-20T16:06:50.646+09:00 DEBUG 856 --- [LAAM Words] [main] com.laam.words.cmn.filter.JwtFilter      : Filter 'jwtFilter' configured for use
+2026-01-20T16:06:50.689+09:00  INFO 856 --- [LAAM Words] [main] com.laam.words.cmn.conf.RedisConfig      : # Redis Host:Port = 127.0.0.1:6379
+2026-01-20T16:06:51.027+09:00  INFO 856 --- [LAAM Words] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name lwUserService
+2026-01-20T16:06:51.139+09:00  INFO 856 --- [LAAM Words] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-01-20T16:06:51.354+09:00  INFO 856 --- [LAAM Words] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-20T16:06:51.360+09:00  INFO 856 --- [LAAM Words] [main] com.laam.words.LaamWordsApplication      : Started LaamWordsApplication in 2.216 seconds (process running for 2.693)
